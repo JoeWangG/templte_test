@@ -1,0 +1,54 @@
+name: 🐞 Bug Report
+description: Create a report to help us improve
+labels: ["Type: Bug", "Priority: 3"]
+
+body:
+  - type: textarea
+    id: expect
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What did you actual to happen?
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: What OS are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - macOS
+    validations:
+      required: true
+  - type: textarea
+    id: ref
+    attributes:
+      label: Reference any issue, pull request, or discussion
+      placeholder: |
+        1. #10001
+        1. gorilla-ai/foo#10001
+      value: |
+        1. #
+  - type: textarea
+    id: logs
+    attributes:
+      label: Please provide application configuration and log files.
+      render: shell

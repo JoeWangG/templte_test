@@ -1,0 +1,55 @@
+name: 📇 User Story
+description: This template provides a basic structure for user story.
+labels: ["Type: Feature", "Scrum: Story", "Priority: 3"]
+
+body:
+  - type: textarea
+    id: contact
+    attributes:
+      label: 💬 Narrative
+      placeholder: "As a customer, I want to be able to save a product in my wishlist so that I can view it again later."
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 🔗 Ref
+      placeholder: |
+        1. #10001
+        1. gorilla-ai/foo#10001
+      value: |
+        1. #
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 📜 Acceptance Criteria
+      description: "請參考 Gherkin Syntax: https://cucumber.io/docs/gherkin/reference/"
+      placeholder: |
+        - [ ] add product to wishlist
+          ```feature
+          Given a web browser is on the store page
+          When the customer clicks "Add to wishlist"
+          Then add the product to the customer's wishlist
+          ```
+      value: |
+        - [ ]
+          ```feature
+          Given
+          When
+          Then
+          ```
+    validations:
+      required: false
+  - type: textarea
+    id: tasks
+    attributes:
+      label: ⚙️ Tasks
+      placeholder: |
+        - [ ] #10003
+        - [ ] gorilla-ai/foo#10003
+      value: |
+        - [ ] #
+    validations:
+      required: false

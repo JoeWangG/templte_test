@@ -1,0 +1,23 @@
+name: ⚙️ Task
+description: This template provides a basic structure for task.
+labels: ["Scrum: Task", "Priority: 3"]
+
+body:
+  - type: textarea
+    id: contact
+    attributes:
+      label: 💬 Narrative
+      placeholder: "Put 'Add to wishlist' button on each product page."
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 🔗 Ref
+      placeholder: |
+        1. #10001
+        1. gorilla-ai/foo#10001
+      value: |
+        1. #
+    validations:
+      required: false

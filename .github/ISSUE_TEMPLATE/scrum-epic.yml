@@ -1,0 +1,34 @@
+name: ⛰ Epic
+description: This template provides a basic structure for epic.
+labels: ["Scrum: Epic", "Priority: 3"]
+
+body:
+  - type: textarea
+    id: contact
+    attributes:
+      label: 💬 Narrative
+      placeholder: "As a customer, I want to be able to have wishlists so that I can come back to buy products later."
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 🔗 Ref
+      placeholder: |
+        1. #10001
+        1. gorilla-ai/foo#10001
+      value: |
+        1. #
+    validations:
+      required: false
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 📇 Stories
+      placeholder: |
+        - [ ] #10003
+        - [ ] gorilla-ai/foo#10003
+      value: |
+        - [ ] #
+    validations:
+      required: false
